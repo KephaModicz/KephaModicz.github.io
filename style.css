@@ -27,14 +27,14 @@ background url("https://github.com/KephaModicz/kephamodicz.github.io/blob/main/b
 nav {
   background-color: var(--primary);
   padding: 1rem 2rem;
-  color: var(--white);
+  color: var(--black);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 nav a {
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: 500;
@@ -111,17 +111,17 @@ button:hover {
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-         color: #000;
   }
 
   nav a {
-    margin: 0.8rem 0;
+    margin: 0.5rem 0;
   }
 
   .hero h1 {
     font-size: 2rem;
   }
 }
+
 
 
 
