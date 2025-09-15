@@ -111,17 +111,18 @@ button:hover {
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
+         color: #000;
   }
 
   nav a {
     margin: 0.8rem 0;
-     color: #000;
   }
 
   .hero h1 {
     font-size: 2rem;
   }
 }
+
 
 
 
