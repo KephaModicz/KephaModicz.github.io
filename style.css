@@ -115,12 +115,14 @@ button:hover {
 
   nav a {
     margin: 0.8rem 0;
+     color: #000;
   }
 
   .hero h1 {
     font-size: 2rem;
   }
 }
+
 
 
 
