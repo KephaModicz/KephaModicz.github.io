@@ -23,6 +23,13 @@
 
   <section class="container">
     <h2>Our Services</h2>
+    <h1>Upload Your File</h1>
+    <form action="/upload-endpoint" method="post" enctype="multipart/form-data">
+        <label for="myFile">Select a file:</label>
+        <input type="file" name="myFile" id="myFile" accept=".jpg, .png, .pdf,.xlsx">
+        <br><br>
+        <button type="submit">Upload</button>
+    </form>
     <p>Currently in Development.</p>
   </section>
 
@@ -31,6 +38,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
