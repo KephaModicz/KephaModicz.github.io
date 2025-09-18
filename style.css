@@ -8,10 +8,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9fbff;
-background-image: url('bkg.jpg');
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 color: #333;
   line-height: 1.6;
 }
@@ -121,6 +117,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
