@@ -23,14 +23,12 @@ color: #333;
 nav {
   background-color: var(--primary);
   padding: 1rem 2rem;
-  color: var(--black);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 nav a {
-  color: var(--black);
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: 500;
@@ -117,6 +115,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
