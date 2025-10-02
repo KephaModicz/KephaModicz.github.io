@@ -14,7 +14,7 @@ color: #333;
 
 /* Color Theme */
 :root {
-  --primary: #2196f3;  /* Light Blue */
+  --primary: #21f3e9;  /* Light Blue */
   --primary-light: #e3f2fd;
   --white: #ffffff;
 }
@@ -115,6 +115,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
