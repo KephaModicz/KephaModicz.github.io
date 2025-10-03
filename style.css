@@ -46,15 +46,15 @@ nav a:hover {
   text-align: center;
 }
 .rotate {
-  animation: rotation 8s infinite linear;
+  animation: spin 8s infinite linear;
 }
 
-@keyframes rotation {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -127,6 +127,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
