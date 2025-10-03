@@ -27,7 +27,11 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
+.meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
 nav a {
   text-decoration: none;
   margin-left: 1.5rem;
@@ -121,6 +125,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
