@@ -41,7 +41,7 @@ nav a:hover {
 /* Hero Section */
 .hero {
   .rotate {
-  animation: rotation 5s infinite linear;
+  animation: rotation 10s infinite linear;
 }
 
 @keyframes rotation {
@@ -127,6 +127,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
