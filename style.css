@@ -40,6 +40,18 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
+   .rotate {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
   padding: 4rem 2rem;
   background: linear-gradient(to right, var(--primary), #64b5f6);
   color: var(--white);
@@ -115,6 +127,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
