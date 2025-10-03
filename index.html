@@ -18,8 +18,110 @@
       <a href="contact.html">Contact</a>
     </div>
   </nav>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
 
-  <section class="hero">
+    .blog-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .blog-section h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 15px;
+    }
+
+    .blog-content h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .blog-content p {
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .blog-content a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .blog-content a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <section class="blog-section">
+    <h2>Latest Blogs</h2>
+    <div class="blog-container">
+      
+      <div class="blog-card">
+        <img src="blog1.jpg" alt="Blog 1">
+        <div class="blog-content">
+          <h3>How to Learn Web Development</h3>
+          <p>A beginner-friendly guide to becoming a web developer.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="blog2.jpg" alt="Blog 2">
+        <div class="blog-content">
+          <h3>Top 10 CSS Tricks</h3>
+          <p>Enhance your website with these powerful CSS tips.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="blog3.jpg" alt="Blog 3">
+        <div class="blog-content">
+          <h3>Why JavaScript is Important</h3>
+          <p>Discover why JS is the backbone of modern web development.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+<section class="hero">
     <style>
     .rotate {
   animation: spin 8s infinite linear;
@@ -53,6 +155,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
