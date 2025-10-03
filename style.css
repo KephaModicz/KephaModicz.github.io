@@ -60,6 +60,13 @@ nav a:hover {
   max-width: 1200px;
   margin: auto;
 }
+.container1 {
+   color: var(--white);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
 
 /* Footer */
 footer {
@@ -114,6 +121,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
