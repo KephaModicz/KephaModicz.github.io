@@ -18,7 +18,35 @@
       <a href="contact.html">Contact</a>
     </div>
   </nav>
-  <style>
+<section class="hero">
+    <style>
+    .rotate {
+  animation: spin 8s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+ <img src="pfl.png" alt="Company Logo" width="150" height="auto" class="rotate">  
+    <h1>My Space, My Mind</h1>
+    <p>Nonsensical Thoughts, Oops!!Low IQ DETECTED</p>
+</section>
+  <section class="container">
+   <h1 style="color: blue;">Upload Your File</h1>
+    <form action="/index" name="fileForm" method="post" enctype="multipart/form-data" data-netlify="true">
+        <label for="myFile">Select a file:</label>
+        <input type="file" name="myFile" id="myFile" accept=".jpg, .png, .pdf,.xlsx" required>
+        <br><br>
+        <button type="submit">Upload</button>
+    </form>
+  </section>
+ <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -121,40 +149,12 @@
       
     </div>
   </section>
-<section class="hero">
-    <style>
-    .rotate {
-  animation: spin 8s infinite linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-</style>
- <img src="pfl.png" alt="Company Logo" width="150" height="auto" class="rotate">  
-    <h1>My Space, My Mind</h1>
-    <p>Nonsensical Thoughts, Oops!!Low IQ DETECTED</p>
-</section>
-  <section class="container">
-   <h1 style="color: blue;">Upload Your File</h1>
-    <form action="/index" name="fileForm" method="post" enctype="multipart/form-data" data-netlify="true">
-        <label for="myFile">Select a file:</label>
-        <input type="file" name="myFile" id="myFile" accept=".jpg, .png, .pdf,.xlsx" required>
-        <br><br>
-        <button type="submit">Upload</button>
-    </form>
-  </section>
-
-  <footer>
+ <footer>
     &copy; 2025 DNK. All rights reserved.
   </footer>
 </body>
 </html>
+
 
 
 
