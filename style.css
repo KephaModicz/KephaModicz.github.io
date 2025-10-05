@@ -45,7 +45,6 @@ nav a:hover {
 /* Hero Section */
 .hero {
   padding: 4rem 2rem;
-  background: linear-gradient(to right, var(--primary), #64b5f6);
   color: var(--white);
   text-align: center;
 }
@@ -125,6 +124,7 @@ button:hover {
     font-size: 2rem;
   }
 }
+
 
 
 
