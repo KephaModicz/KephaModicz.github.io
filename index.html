@@ -76,55 +76,32 @@
     }
 
     /* ======== 3D ROTATING IMAGE ======== */
-   <!-- ======== CIRCULAR IMAGE ANIMATION ======== -->
-<style>
-  .container1 {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 50px auto;
-    perspective: 800px;
-  }
+    .container1 {
+      perspective: 800px;
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
 
-  .orbit {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: orbit 6s linear infinite;
-    transform-origin: center;
-  }
+    .image-box {
+      width: 280px;
+      height: 180px;
+      transform-style: preserve-3d;
+      animation: spin 6s linear infinite;
+    }
 
-  .orbit img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 120px;
-    height: 120px;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    /* Uncomment next line if you want it to spin on its axis */
-    /* animation: spin 3s linear infinite; */
-  }
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
 
-  @keyframes orbit {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-  @keyframes spin {
-    from { transform: translateX(-50%) rotate(0deg); }
-    to { transform: translateX(-50%) rotate(360deg); }
-  }
-</style>
-
-<div class="container1">
-  <div class="orbit">
-    <img src="pfl.png" alt="Circular Rotating Logo">
-  </div>
-</div>
-
+    @keyframes spin {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+    }
 
     /* ======== FILE UPLOAD ======== */
     .container {
@@ -357,4 +334,3 @@
   </footer>
 </body>
 </html>
-
