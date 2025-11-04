@@ -5,73 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KEPHA DICKSON</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-<body style="background-image: url('bkg.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-  <nav>
-     <img src="logo.png" alt="profile" width="150" height="auto">
-    <div class="logo">
-      <h1>Kepha's Perspective</h1></div>
-    <marquee direction="left" behavior="scroll" scrollamount="3"><p style="color: red;"> NOTICE: THIS SITE IS CURRENTLY UNDER DEVELOPMENT.</p></marquee>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-<section class="hero">
-    <style>
-.container1 {
-    perspective: 800px; /* adds 3D depth */
-  }
-
-  .image-box {
-    width: 300px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: spin 6s linear infinite;
-  }
-
-  .image-box img {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-  
-
-  @keyframes spin {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(360deg);
-    }
-  }
-</style>
- <div class="container1">
-      <img src="pfl.png" alt="Company Logo">
-    </div>
-  </div> 
-    <h1>My Space, My Mind</h1>
-    <p>Nonsensical Thoughts, Oops!!Low IQ DETECTED</p>
-</section>
-  <section class="container">
-   <h1 style="color: green;">Upload Your File</h1>
-    <form action="/index" name="fileForm" method="post" enctype="multipart/form-data" data-netlify="true">
-        <label for="myFile">Select a file:</label>
-        <input type="file" name="myFile" id="myFile" accept=".jpg, .png, .pdf,.xlsx" required>
-        <br><br>
-        <button type="submit">Upload</button>
-    </form>
-  </section>
- <style>
+  <style>
+    /* ======== GLOBAL ======== */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background: #f9f9f9;
+      color: #222;
     }
 
+    /* ======== NAVBAR ======== */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav img {
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    nav .logo h1 {
+      margin: 0;
+      font-size: 1.4em;
+    }
+
+    nav div a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav div a:hover {
+      color: #00ff9d;
+    }
+
+    marquee {
+      width: 100%;
+      font-size: 0.9em;
+    }
+
+    /* ======== HERO ======== */
+    .hero {
+      text-align: center;
+      color: white;
+      padding: 80px 20px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      color: #e0e0e0;
+    }
+
+    /* ======== 3D ROTATING IMAGE ======== */
+    .container1 {
+      perspective: 800px;
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .image-box {
+      width: 280px;
+      height: 180px;
+      transform-style: preserve-3d;
+      animation: spin 6s linear infinite;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    @keyframes spin {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+    }
+
+    /* ======== FILE UPLOAD ======== */
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+      background: #ffffffc7;
+      margin: 40px auto;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .container h1 {
+      color: green;
+      font-size: 1.8em;
+    }
+
+    .container button {
+      background: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .container button:hover {
+      background: darkgreen;
+    }
+
+    /* ======== BLOG SECTION ======== */
     .blog-section {
       max-width: 1000px;
       margin: auto;
@@ -82,11 +145,12 @@
       text-align: center;
       font-size: 2em;
       margin-bottom: 30px;
+      color: green;
     }
 
     .blog-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
 
@@ -128,16 +192,113 @@
       margin-top: 10px;
       color: #007BFF;
       text-decoration: none;
+      transition: color 0.3s;
     }
 
     .blog-content a:hover {
+      color: #0044cc;
       text-decoration: underline;
     }
+
+    /* ======== FOOTER ======== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 0.9em;
+    }
+
+    /* ======== RESPONSIVE DESIGN ======== */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav img {
+        width: 80px;
+      }
+
+      nav .logo h1 {
+        font-size: 1.2em;
+      }
+
+      nav div {
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 1.8em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+
+      .image-box {
+        width: 220px;
+        height: 140px;
+      }
+
+      .container {
+        width: 90%;
+      }
+
+      .blog-section h2 {
+        font-size: 1.6em;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
+    }
   </style>
+</head>
+
+<body style="background-image: url('bkg.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+  <!-- NAVIGATION -->
+  <nav>
+    <img src="logo.png" alt="profile">
+    <div class="logo">
+      <h1>Kepha's Perspective</h1>
+    </div>
+    <marquee direction="left" behavior="scroll" scrollamount="3">
+      <p style="color: red;">NOTICE: THIS SITE IS CURRENTLY UNDER DEVELOPMENT.</p>
+    </marquee>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container1">
+      <div class="image-box">
+        <img src="pfl.png" alt="Company Logo">
+      </div>
+    </div>
+    <h1>My Space, My Mind</h1>
+    <p>Nonsensical Thoughts, Oops!! Low IQ DETECTED</p>
+  </section>
+
+  <!-- FILE UPLOAD SECTION -->
+  <section class="container">
+    <h1>Upload Your File</h1>
+    <form action="/index" name="fileForm" method="post" enctype="multipart/form-data" data-netlify="true">
+      <label for="myFile">Select a file:</label><br><br>
+      <input type="file" name="myFile" id="myFile" accept=".jpg, .png, .pdf,.xlsx" required><br><br>
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <!-- BLOG SECTION -->
   <section class="blog-section">
-    <h2 style="color: green;">Latest Blogs</h2>
+    <h2>Latest Blogs</h2>
     <div class="blog-container">
-      
       <div class="blog-card">
         <img src="blog1.jpg" alt="Blog 1">
         <div class="blog-content">
@@ -146,7 +307,7 @@
           <a href="blog1.html">Read More →</a>
         </div>
       </div>
-      
+
       <div class="blog-card">
         <img src="blog2.jpg" alt="Blog 2">
         <div class="blog-content">
@@ -155,7 +316,7 @@
           <a href="blog2.html">Read More →</a>
         </div>
       </div>
-      
+
       <div class="blog-card">
         <img src="blog3.jpg" alt="Blog 3">
         <div class="blog-content">
@@ -164,72 +325,12 @@
           <a href="blog3.html">Read More →</a>
         </div>
       </div>
-      
     </div>
   </section>
- <footer>
+
+  <!-- FOOTER -->
+  <footer>
     &copy; 2025 DNK. All rights reserved.
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
